@@ -1,0 +1,86 @@
+/* Main styles */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #212121;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+    background-color: #2f2f2f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  input, select, button {
+    font-family: "Arial", sans-serif;
+    background-color: transparent;
+    border: 2px solid #3d3d3d;
+    padding: 8px 12px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus, select:focus {
+    border-color: #00bcd4;
+  }
+  
+  input::placeholder {
+    color: #777777;
+  }
+  
+  select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"><path fill="%23777" d="M1.4 0L6 4.6 10.6 0 12 1.4 6 7.4 0 1.4z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 30px;
+  }
+  
+  button {
+    background-color: #00bcd4;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #008ba3;
+  }
+  
+  .calc-error, .calc-result {
+    font-size: 16px;
+    margin-top: 10px;
+    
+  }
+  
+  .calc-error {
+    color: #f44336;
+  }
+  
+  .calc-result {
+    color: #4caf50;
+  }
+  .calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-container {
+    width: 100%;
+    text-align: center;
+}
